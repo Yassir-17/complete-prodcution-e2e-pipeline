@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: complete-prod-e2e-pipeline
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      run: complete-prod-e2e-pipeline
+  template:
+    metadata:
+      labels:
+        run: complete-prod-e2e-pipeline
+    spec:
+      containers:
+      - name: complete-prod-e2e-pipeline
+        image: yassir17/complete-prod-e2e-pipeline
+        ports:
+          - containerPort: 8082
+        imagePullPolicy: IfNotPresent
