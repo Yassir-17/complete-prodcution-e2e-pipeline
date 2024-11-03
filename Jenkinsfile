@@ -51,13 +51,13 @@ pipeline {
             }
         }
         
-        /*stage("Quality Gate") {
+        stage("Quality Gate") {
             steps {
                 script {
-                    waitForQualityGate abortPipeline: false, credentialsId: 'sonar-token'
+                    waitForQualityGate abortPipeline: true, credentialsId: 'sonar-token'
                 }
             }
-        }*/
+        }
         
         stage('Build & push Docker Image') {
             steps {
