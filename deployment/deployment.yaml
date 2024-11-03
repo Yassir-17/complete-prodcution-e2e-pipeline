@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: complete-prod-e2e-pipeline
-        image: yassir17/complete-prod-e2e-pipeline:30
+        image: yassir17/complete-prod-e2e-pipeline:31
         ports:
           - containerPort: 8082
         imagePullPolicy: IfNotPresent
