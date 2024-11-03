@@ -10,3 +10,6 @@
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# anything inside target folder
+./target/*
