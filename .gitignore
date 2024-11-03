@@ -12,4 +12,4 @@
 *.vsix
 
 # anything inside target folder
-./target/*
+target/
