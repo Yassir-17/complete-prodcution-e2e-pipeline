@@ -37,3 +37,45 @@ The pipeline is structured into multiple stages:
 9. **Update Deployment File**: Updates the Kubernetes deployment YAML with the new image version and pushes the change to GitHub.
 
 ---
+
+## First Running the Project Locally
+
+To run the project and test it locally using Docker:
+1. **Clone the Repository**:
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   
+2. **Build the Docker Image**:
+   ```bash
+   docker build -t complete-prod-e2e-pipeline:latest .
+
+3. **Run the Docker Container**:
+   ```bash
+   docker run -p 8082:8082 complete-prod-e2e-pipeline:latest
+
+**Note**
+ I configured the java application to listen on port 8082
+
+4. **Access the application**:
+   open your browser and access: http://localhost:8082
+
+To run the project and test it locally without using Docker:
+1. **Clone the Repository**:
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+
+2. **Compile the Application**:
+   ```bash
+   mvn clean package
+
+3. **Run the Application**:
+   ```bash
+    java -jar target/demoapp.jar
+
+4. **Access the application**:
+   open your browser and access: http://localhost:8082
+
+
+
