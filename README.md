@@ -9,7 +9,7 @@ Ensure you have the following infrastructure and tools set up:
 
 - **Kubernetes Cluster**: A running Kubernetes cluster.
 - **Jenkins**: Installed and configured with required plugins.
-- **ArgoCD**: Installed on the Kubernetes cluster for deployment management or the kubernetes cluster is configured as cluster for deploying applications.
+- **ArgoCD**: Installed on the Kubernetes cluster for deployment management or the kubernetes cluster is configured as a cluster for deploying applications.
 - **SonarQube**: Running and accessible for code quality analysis.
 
 ---
