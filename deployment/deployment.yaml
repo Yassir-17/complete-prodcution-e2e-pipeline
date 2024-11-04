@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: complete-prod-e2e-pipeline
 spec:
-  replicas: 1
+  replicas: 0
   selector:
     matchLabels:
       run: complete-prod-e2e-pipeline
