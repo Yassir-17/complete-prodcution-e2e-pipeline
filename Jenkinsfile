@@ -91,7 +91,7 @@ pipeline {
                       git config user.email "anfalbla@gmail.com"
                       git config user.name "yassir-17"
                       BUILD_NUMBER=${BUILD_NUMBER}
-                      sed -i "s|\\(yassir17/complete-prod-e2e-pipeline:\\)[^ ]*|\\1${BUILD_NUMBER}|g" deployment/deployment.yaml
+                      sed -i "s|\\(yassir17/complete-prodcution-e2e-pipeline:\\)[^ ]*|\\1${BUILD_NUMBER}|g" deployment/deployment.yaml
                       git add .
                       git commit -m "Update deployment image to version ${BUILD_NUMBER}"
                       git push https://${GIT_USER}:${GIT_TOKEN}@github.com/${GIT_USER_NAME}/${GIT_REPO_NAME} HEAD:main
