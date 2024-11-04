@@ -82,7 +82,8 @@ To run the project and test it locally without using Docker:
 1. **Configure Jenkins**: Add required credentials and configure Jenkins to connect to your GitHub and Docker Hub accounts.
 2. **SonarQube**: Ensure the sonar-token is configured in Jenkins for authentication with SonarQube.
 4. **ArgoCD Setup**: Apply the argocd-app.yaml file to ArgoCD. This will enable ArgoCD to monitor and automatically deploy changes to the Kubernetes cluster.
-
+   ```bash
+   # kubectl create -f argocd-app.yaml
 ## License
 
 This project is licensed under the MIT License.
